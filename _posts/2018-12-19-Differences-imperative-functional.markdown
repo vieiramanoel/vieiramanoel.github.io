@@ -13,7 +13,7 @@ category: blog
 author: vieira
 ---
 
-When we are moving from one paradigm to another is difficult to learn how to think from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should taken a little time from thinking in a procedural way since ever to design your code based on OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
+When we are moving from one paradigm to another it's difficult to learn how to start thinking from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should taken a little time from thinking in a procedural way since ever to starting design your code based on OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
 
 I'll describe in this post the most important breaking point in these early studies about functional programming using Haskell until now.
 
@@ -26,7 +26,8 @@ In the other hand, functional languages (like haskell, elm-lang, etc.) you descr
 This can be a little bit abstract, so let's see an example.
 
 First of all I'll define my dictionary list this way:
-    *A list of pairs (a tuple containing two values) where the first one is a string for the person name and second one is its age*
+
+*A list of pairs (pair: tuple containing two values) where the first one is a string for the person's name and second one is its age*
 
 So in C++ I would define a tuple like this
 
@@ -44,9 +45,9 @@ struct tuple {
 {% endhighlight %}
 
 
-*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...), once I'm trying to describe an example for any imperative language and while some have functional tools (c++14, python), others don't (c, golang)
+*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...). I'm trying to describe an example for any imperative language and while some have functional tools (c++14, python), others don't (c, golang)
 
-And then my dictionary instantiated on main would be:
+Then my dictionary instantiated on main would be:
 
 {% highlight c %}
 
@@ -81,7 +82,7 @@ My outputs are then
 
 {% highlight c %}
 
-getAge(dict, "Jonh") // evaluates 32
+getAge(dict, "John") // evaluates 32
 getAge(dict, "Mary") // evaluates 21
 getAge(dict, "Josh") // evaluates 40
 
@@ -98,9 +99,11 @@ I'm assuming you're not familiar with Haskell syntax, so I'll be a little verbos
 
 Let's get back our dict definition
 
-*A list of pairs (a tuple containing two values) where the first one is a string for the person name and second one is its age*
+*A list of pairs (pair: tuple containing two values) where the first one is a string for the person name and second one is its age*
 
 For haskell lists and tuples are concepts well defined, because, hm... it's a functional language.
+
+> Note: GHCi is a haskell interactive shell something pretty much like python interpreter
 
 So our dict would be simply:
 
