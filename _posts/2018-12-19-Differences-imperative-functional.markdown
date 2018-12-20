@@ -44,7 +44,7 @@ struct tuple {
 {% endhighlight %}
 
 
-*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...), once I'm trying to describe an example for any imperative language and some have functional tools (c++14, python), others don't (c, golang)
+*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...), once I'm trying to describe an example for any imperative language and while some have functional tools (c++14, python), others don't (c, golang)
 
 And then my dictionary instantiated on main would be:
 
@@ -116,13 +116,14 @@ Nice, we defined our structure. Despite we don't had to define the tuple type li
 
 UNTIL NOW.
 
-## Step 1: filter your list removing undesired elements
+## Step 1: Filter your list removing undesired elements
 
 {% highlight hs %}
 
 dict = [("John", 32), ("Mary", 21), ("Josh", 40)]
 filterByKey key dict = filter (\(k,v) -> k == key) dict
--- filterByKey takes two arguments and returns all elements where first element is equal to requested key
+-- filterByKey takes two arguments and returns all
+-- elements where first element is equal to requested key
 -- This is pretty similar to SQL
 
 -- On GHCi
@@ -131,13 +132,13 @@ filterByKey key dict = filter (\(k,v) -> k == key) dict
 [("John",32)]
 {% endhighlight %}
 
-* I've saved my hs file as `modules.hs`
+*I've saved my hs file as `modules.hs`
 
 Now we have a list elements that interests to us.
 
 In C we defined that first element containing the key returns its value, let's define same behavior in haskell.
 
-To take only first element from a list you just need to `head list`
+## Step 2: Take only first element from a list you just need to `head list`
 
 {% highlight hs %}
 
@@ -154,13 +155,17 @@ filterByKey key dict = head . filter (\(k,v) -> k == key) dict
 
 Ok, now we got first tuple on our dict with `key="John"`
 
+## Step 3: Returns age from pair (name, age)
+
 Once we want just its age, then `filterByKey` changes to getAge
 
 {% highlight hs %}
 
 dict = [("John", 32), ("Mary", 21), ("Josh", 40)]
 getAge name dict = snd . head . filter (\(k,v) -> k == name) dict
--- I changed function name to `getAge` and parameter from `key` to `name` in order to be more readable
+-- I changed function name to `getAge`
+-- and parameter from `key` to `name` in order to be more readable
+-- snd is a function which returns second element from a pair (pretty useful, hm?)
 
 -- On GHCi
 *Main> :l modules.hs
