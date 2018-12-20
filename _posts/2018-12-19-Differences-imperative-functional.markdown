@@ -19,7 +19,7 @@ I'll describe in this post the most important breaking point in these early stud
 
 No more blablabla:
 
-In imperative languages (you use at least one of them if you are here) = such as C/C++, Java, Golang - You describe **HOW TO** achieve your desired data from an input.
+In imperative languages (you use at least one of them if you are here) - such as C/C++, Java, Golang - You describe **HOW TO** achieve your desired data from an input.
 
 In the other hand, functional languages (like haskell, elm-lang, etc.) you describe **WHAT IS** your desired data for a certain input.
 
