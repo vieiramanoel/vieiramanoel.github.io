@@ -13,15 +13,15 @@ category: blog
 author: vieira
 ---
 
-When we are moving from one paradigm to another it's difficult to learn how to start thinking from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should taken a little time from thinking in a procedural way since ever to starting design your code based on OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
+When we are moving from one paradigm to another it's difficult to learn how to start thinking from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should have taken a little while from thinking in a procedural way to thinking code in a OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
 
 I'll describe in this post the most important breaking point in these early studies about functional programming using Haskell until now.
 
 No more blablabla:
 
-In imperative languages (you use at least one of them if you are here), such as C/C++, Java, Golang. You describes **HOW TO** achieve your desired data from an input.
+In imperative languages (you use at least one of them if you are here), such as C/C++, Java, Golang. You describe **HOW TO** achieve your desired data from an input.
 
-In the other hand, functional languages (like haskell, elm-lang, etc.) you describes **WHAT IS** your desired data for a certain input.
+In the other hand, functional languages (like haskell, elm-lang, etc.) you describe **WHAT IS** your desired data for a certain input.
 
 This can be a little bit abstract, let's see an example.
 
@@ -89,7 +89,7 @@ getAge(dict, "Josh") // evaluates 40
 {% endhighlight %}
 
 
-Ok we got a lot of work until here, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
+Ok, this was a lot of, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
 
 We defined our structure, and **HOW TO** operate on that.
 
@@ -137,7 +137,7 @@ filterByKey key dict = filter (\(k,v) -> k == key) dict
 
 *I've saved my hs file as `modules.hs`
 
-Now we have a list elements that interests to us.
+Now we have a list elements that interests us.
 
 In C we defined that first element containing the key returns its value, let's define same behavior in haskell.
 
@@ -157,11 +157,11 @@ filterByKey key dict = head . filter (\(k,v) -> k == key) dict
 
 {% endhighlight %}
 
-Ok, now we got first tuple on our dict with `key="John"`
+Ok, now we got the first tuple in our dict with `key="John"`
 
 ## Step 3: Returns age from pair (name, age)
 
-Once we want just its age, then `filterByKey` changes to getAge
+Since we want just its age, then `filterByKey` changes to getAge
 
 {% highlight hs %}
 
@@ -178,8 +178,8 @@ getAge name dict = snd . head . filter (\(k,v) -> k == name) dict
 
 {% endhighlight %}
 
-Voilà, we've extracted data we want from our structure saying **WHAT** our desired data is, not **HOW TO** obtain it.
+Voilà, we've extracted the data we want from our structure saying **WHAT** our desired data is, not **HOW TO** obtain it.
 
-First mistake that people like me who are starting a new paradigm makes is try to associate the known thinking process to a completely different thing that doesn't have any relation between them.
+First mistake that people like me who are starting a new paradigm make is trying to associate the known thinking process to a completely different thing that doesn't have anything to do with the old paradigm.
 
 So, next time you're writing a functional program think: "What's my output and what functions must I apply to my input to produce the data I want?" instead of "What steps are necessary to achieve my goal?".
