@@ -145,7 +145,7 @@ In C we defined that first element containing the key returns its value, let's d
 
 {% highlight hs %}
 
-dict = [("John", 32), ("Mary", 21), ("Josh", 40)]*
+dict = [("John", 32), ("Mary", 21), ("Josh", 40)]
 filterByKey key dict = head . filter (\(k,v) -> k == key) dict
 -- This dot between `head` and `filter` means: "extract first element
 -- from list returned by filter"
