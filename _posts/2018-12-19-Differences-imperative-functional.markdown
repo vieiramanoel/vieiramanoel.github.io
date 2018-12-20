@@ -44,7 +44,7 @@ struct tuple {
 {% endhighlight %}
 
 
-*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...)
+*Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...), once I'm trying to describe an example for any imperative language and some have functional tools (c++14, python), others don't (c, golang)
 
 And then my dictionary instantiated on main would be:
 
@@ -90,9 +90,22 @@ getAge(dict, "Josh") // evaluates 40
 
 Ok we got a lot of work until here, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
 
-We defined our structure, and **HOW TO** operates on that.
+We defined our structure, and **HOW TO** operate on that.
 
 Well, the fun starts now.
 
 I'm assuming you're not familiar with Haskell syntax, so I'll be a little verbose.
 
+Let's get back our dict definition
+
+*A list of pairs (a tuple containing two values) where the first one is a string for the person name and second one is its age*
+
+For haskell lists and tuples are concepts well defined, because, hm... it's a functional language.
+
+So our dict would be simply
+
+{% highlight hs %}
+
+dict = [("Jhon", 32), ("Mary", 21), ("Josh", 40)]
+
+{% endhighlight %}
