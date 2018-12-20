@@ -27,6 +27,7 @@ This can be a little bit abstract, so let's see an example.
 
 First of all I'll define my dictionary list this way:
     *A list of pairs (a tuple containing two values) where the first one is a string for the person name and second one is its age*
+
 So in C++ I would define a tuple like this
 
 {% highlight c %}
@@ -40,7 +41,8 @@ struct tuple {
     int value;
 };
 
-{% endhightlight %}
+{% endhighlight %}
+
 
 *Assuming we don't have all lovely functional tools from C++14 (lists, tuples, ...)
 
@@ -54,7 +56,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-{% endhightlight %}
+{% endhighlight %}
+
 
 Take a breath, we will continue after that. I know it's getting boring, but stay with me a little bit more.
 
@@ -71,9 +74,10 @@ int getAge (std::vector<tuple> dict, std::string name){
     return -1;
 }
 
-{% endhightlight %}
+{% endhighlight %}
 
-My outputs are
+
+My outputs are then
 
 {% highlight c %}
 
@@ -81,4 +85,14 @@ getAge(dict, "Jonh") // evaluates 32
 getAge(dict, "Mary") // evaluates 21
 getAge(dict, "Josh") // evaluates 40
 
-{% endhightlight %}
+{% endhighlight %}
+
+
+Ok we got a lot of work until here, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
+
+We defined our structure, and **HOW TO** operates on that.
+
+Well, the fun starts now.
+
+I'm assuming you're not familiar with Haskell syntax, so I'll be a little verbose.
+
