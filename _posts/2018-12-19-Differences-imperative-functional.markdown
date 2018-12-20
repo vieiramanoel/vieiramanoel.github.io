@@ -13,13 +13,13 @@ category: blog
 author: vieira
 ---
 
-When we are moving from one paradigm to another it's difficult to learn how to start thinking from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should have taken a little while from thinking in a procedural way to thinking code in a OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
+When we are moving from one paradigm to another it's difficult to learn how to start thinking from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on, it should have taken a little while from thinking in a procedural way to thinking code in a OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
 
 I'll describe in this post the most important breaking point in these early studies about functional programming using Haskell until now.
 
 No more blablabla:
 
-In imperative languages (you use at least one of them if you are here), such as C/C++, Java, Golang. You describe **HOW TO** achieve your desired data from an input.
+In imperative languages (you use at least one of them if you are here) = such as C/C++, Java, Golang - You describe **HOW TO** achieve your desired data from an input.
 
 In the other hand, functional languages (like haskell, elm-lang, etc.) you describe **WHAT IS** your desired data for a certain input.
 
@@ -137,7 +137,7 @@ filterByKey key dict = filter (\(k,v) -> k == key) dict
 
 *I've saved my hs file as `modules.hs`
 
-Now we have a list elements that interests us.
+Now we have a list of elements that interests us.
 
 In C we defined that first element containing the key returns its value, let's define same behavior in haskell.
 
@@ -169,7 +169,8 @@ dict = [("John", 32), ("Mary", 21), ("Josh", 40)]
 getAge name dict = snd . head . filter (\(k,v) -> k == name) dict
 -- I changed function name to `getAge`
 -- and parameter from `key` to `name` in order to be more readable
--- snd is a function which returns second element from a pair (pretty useful, hm?)
+-- snd is a function which returns second element
+-- from a pair (pretty useful, hm?)
 
 -- On GHCi
 *Main> :l modules.hs
