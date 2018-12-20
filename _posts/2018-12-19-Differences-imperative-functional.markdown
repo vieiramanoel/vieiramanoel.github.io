@@ -89,7 +89,7 @@ getAge(dict, "Josh") // evaluates 40
 {% endhighlight %}
 
 
-Ok, this was a lot of, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
+Ok, this was a lot of work, you can check complete code at [this gist](https://gist.github.com/vieiramanoel/3de09d6aaa6964fe28c161d18749dda0)
 
 We defined our structure, and **HOW TO** operate on that.
 
