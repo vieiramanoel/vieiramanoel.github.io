@@ -181,4 +181,4 @@ Voilà, we've extracted data we want from our structure saying **WHAT** our desi
 
 First mistake that people like me who are starting a new paradigm like functional programming makes is try to associate the known thinking process to a completely different thing that doesn't have any relation between them.
 
-So, next time we're writing a functional program think: "What's my output and what functions must I apply to my input to produce the data I want?" instead of "What steps are necessary to achieve my goal?".
+So, next time you're writing a functional program think: "What's my output and what functions must I apply to my input to produce the data I want?" instead of "What steps are necessary to achieve my goal?".
