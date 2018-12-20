@@ -13,7 +13,7 @@ category: blog
 author: vieira
 ---
 
-When we are moving from one paradigm from another is difficult to learn how to think from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should taken a little time from thinking in a procedural way since ever to design your code based on OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
+When we are moving from one paradigm to another is difficult to learn how to think from a different viewing point. Think about it: when you had your first classes at college about C and then in the next semester you needed to learn C++ or Java and its classes, hierarchy, composition, constructors and so on. It should taken a little time from thinking in a procedural way since ever to design your code based on OO architecture. What about moving from OO designed architecture to functional programming? Let's see.
 
 I'll describe in this post the most important breaking point in these early studies about functional programming using Haskell until now.
 
