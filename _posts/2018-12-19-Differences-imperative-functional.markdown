@@ -23,7 +23,7 @@ In imperative languages (you use at least one of them if you are here), such as 
 
 In the other hand, functional languages (like haskell, elm-lang, etc.) you describes **WHAT IS** your desired data for a certain input.
 
-This can be a little bit abstract, so let's see an example.
+This can be a little bit abstract, let's see an example.
 
 First of all I'll define my dictionary this way:
 
