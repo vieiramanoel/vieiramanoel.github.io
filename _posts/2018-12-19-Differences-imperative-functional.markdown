@@ -25,7 +25,7 @@ In the other hand, functional languages (like haskell, elm-lang, etc.) you descr
 
 This can be a little bit abstract, so let's see an example.
 
-First of all I'll define my dictionary list this way:
+First of all I'll define my dictionary this way:
 
 *A list of pairs (pair: tuple containing two values) where the first one is a string for the person's name and second one is its age*
 
