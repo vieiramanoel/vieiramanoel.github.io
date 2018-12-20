@@ -103,7 +103,7 @@ Let's get back our dict definition
 
 For haskell lists and tuples are concepts well defined, because, hm... it's a functional language.
 
-> Note: GHCi is a haskell interactive shell something pretty much like python interpreter
+> Note: GHCi is a haskell interactive shell, something pretty much like python interpreter
 
 So our dict would be simply:
 
@@ -141,13 +141,14 @@ Now we have a list elements that interests to us.
 
 In C we defined that first element containing the key returns its value, let's define same behavior in haskell.
 
-## Step 2: Take only first element from a list you just need to `head list`
+## Step 2: Take only first element from a list. You just need to **head list**
 
 {% highlight hs %}
 
-dict = [("John", 32), ("Mary", 21), ("Josh", 40)]
+dict = [("John", 32), ("Mary", 21), ("Josh", 40)]*
 filterByKey key dict = head . filter (\(k,v) -> k == key) dict
--- This dot between `head` and `filter` means: "extract first element from list returned by filter"
+-- This dot between `head` and `filter` means: "extract first element
+-- from list returned by filter"
 
 -- On GHCi
 *Main> :l modules.hs
@@ -179,6 +180,6 @@ getAge name dict = snd . head . filter (\(k,v) -> k == name) dict
 
 Voilà, we've extracted data we want from our structure saying **WHAT** our desired data is, not **HOW TO** obtain it.
 
-First mistake that people like me who are starting a new paradigm like functional programming makes is try to associate the known thinking process to a completely different thing that doesn't have any relation between them.
+First mistake that people like me who are starting a new paradigm makes is try to associate the known thinking process to a completely different thing that doesn't have any relation between them.
 
 So, next time you're writing a functional program think: "What's my output and what functions must I apply to my input to produce the data I want?" instead of "What steps are necessary to achieve my goal?".
