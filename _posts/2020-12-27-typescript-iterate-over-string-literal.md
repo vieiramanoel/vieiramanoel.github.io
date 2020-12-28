@@ -27,7 +27,7 @@ const companies = ['google', 'facebook', 'apple'] as const;
 type Company = typeof companies[number];
 ```
 
-Since typescript 3.4 a concept called const assertion was introduced to indicate to compiler that the value is constant and should be replaced at compilation. Now that typescript knows all the possible values for `companies` it can define a literal type from that value (as it's constant etc etc).
+Since typescript 3.4 a concept called const assertion was introduced to indicate to compiler that the value is constant and should be replaced at compilation. Now typescript knows all the possible values for `companies`, thus it can define a literal type from that value (as it's constant etc etc).
 
 The second line is called [indexed access types](https://microsoft.github.io/TypeScript-New-Handbook/chapters/types-from-extraction/#indexed-access-types) and we can define our type extracting it from an object or array item (more examples on the link).
 
