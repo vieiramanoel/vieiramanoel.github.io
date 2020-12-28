@@ -19,7 +19,7 @@ resume-url: https://google.com/?q=my+resume
 
 # your url: http://USERNAME.github.io
 baseurl: ""
-url: "vieirinha.dev"
+url: "https://blog.vieirinha.dev"
 
 # To enable google analytics, supply your token below
 analytics-google: 'UA-131218648-1'
