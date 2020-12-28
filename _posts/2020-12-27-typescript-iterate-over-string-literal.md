@@ -20,7 +20,7 @@ type Company = 'google' | 'facebook' | 'apple';
 
 But very often I want to iterate over the possible values of `Company` - imagine a Select button as an example.
 
-So, for this case most answers would suggest that you use an enum type instead as it provides ways to iterate over it's items. That's a possible solution, but in this post I'd like to offer a different one at compiler time and so that the type `Company` behaves like it was defined literally:
+For this case most answers would suggest that you use an enum type instead as it provides ways to iterate over it's items. That's a possible solution, but in this post I'd like to offer a different approach, one that resolves at compiler time and so that the type `Company` behaves like it was defined literally:
 
 ```typescript 
 const companies = ['google', 'facebook', 'apple'] as const;
