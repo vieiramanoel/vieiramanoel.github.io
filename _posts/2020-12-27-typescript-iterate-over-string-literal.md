@@ -6,7 +6,7 @@ headerImage: false
 tag:
 - typescript
 star: true
-image: /assets/images/post-image.jpg
+image: /assets/images/literal_type.jpg
 category: blog
 author: vieira
 description: 
