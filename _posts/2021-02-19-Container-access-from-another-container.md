@@ -1,5 +1,5 @@
 ---
-title: "Access host's localhost from inside a vscode devcontainer"
+title: "Reach host's localhost from inside a vscode devcontainer"
 layout: post
 date: 2020-12-27 21:18
 headerImage: false
@@ -29,7 +29,7 @@ If you've one of those dev containers and you're struggling to access your devel
  <summary>Optional: enable docker inside your dev container</summary>
 First of all enable to run dockers from your container: 
 
-In your docker image install docker, follow the proper tutorial for your case:
+In your docker image install docker, follow the appropriate tutorial for your case:
 
 - [Enabling docker from docker ](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-from-docker)(devcontainer created from a Dockerfile)
 - [Enabling docker from docker-compose ](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-from-docker)(devcontainer created from docker-compose)
