@@ -25,10 +25,7 @@ Imagine you're migrating your application to a [vscode devcontainer](https://cod
 If you have one of those dev containers and you're struggling to access your development database running in another container in your machine then you've come to the right place.
 
 <details>
- 
- <summary>
-  Optional: enable docker inside your dev container
- </summary>
+ <summary>Optional: enable docker inside your dev container</summary>
 
 First of all enable to run dockers from your container: 
 
@@ -36,6 +33,7 @@ In your docker image install docker, follow the appropriate tutorial for your ca
 
 - [Enabling docker from docker ](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-from-docker)(devcontainer created from a Dockerfile)
 - [Enabling docker from docker-compose ](https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-from-docker)(devcontainer created from docker-compose)
+
 </details>
 
 ## Enable host.docker.internal route
