@@ -52,4 +52,4 @@ services:
 
 This maps your `localhost` from your machine host to a name `host.docker.internal`. Now substitute all occurrences of `localhost` to `host.docker.internal` and it's done!
 
-So if you've been connecting to your database using `localhost:27017` as the conn URL, you'll need to change to `host.docker.internal:27071`, for example.
+So if you've been connecting to your database using `localhost:27017` as the conn URL, you'll need to change it to `host.docker.internal:27071`, for example.
