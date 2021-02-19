@@ -24,8 +24,10 @@ Imagine you're migrating your application to a [vscode devcontainer](https://cod
 
 If you have one of those dev containers and you're struggling to access your development database running in another container in your machine then you've come to the right place.
 
-<details markdown="1">
+<details>
+ <summary>
   Optional: enable docker inside your dev container
+ </summary>
 
 
   First of all enable to run dockers from your container: 
