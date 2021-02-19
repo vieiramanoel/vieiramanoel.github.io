@@ -41,7 +41,7 @@ If you have one of those dev containers and you're struggling to access your dev
 
 ## Enable host.docker.internal route
 
-Once you've installed Docker into the image you want to access those containers that you used to access from localhost.
+Once you've installed Docker into the image you'll want to access those containers that you used to access from localhost.
 
 At your docker-compose.yml inside your `.devcontainer` add these lines to your service
 
