@@ -11,7 +11,7 @@ tag:
 - host.docker.internal
 - host-gateway
 star: true
-image: /assets/images/post-image.jpg
+image: /assets/images/extra_hosts.png
 category: blog
 author: vieira
 description: 
