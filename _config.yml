@@ -106,3 +106,6 @@ plugins:
 
 jekyll-mentions:
     base_url: https://github.com
+
+kramdown:
+  parse_block_html: true
